@@ -7,16 +7,14 @@
 }
 
 html {
-    font-family: "Share Tech Mono", monospace;
     font-size: 12px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: #e7e7e7;
-    /* background: rgb(19, 19, 19); */
-    background-image: url('../images/LandingPage.jpg');
+    background: url('../images/LandingPage.jpg') no-repeat;
     height: 100%;
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 img {
@@ -146,12 +144,12 @@ ul {
 }
 
 .main h2 {
-    letter-spacing: 1.2rem;
+    letter-spacing: 1rem;
     color: skyblue;
     font-size: 2rem;
     font-weight: bold;
     white-space: nowrap;
-    width: 27ch;
+    /* width: 27ch; */
     margin: auto;
 }
 
@@ -193,6 +191,38 @@ ul {
     transition: color 650ms;
     margin-top: 2rem;
     font-size: 3.5rem;
+}
+
+
+/* About */
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.about .container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.details {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    right: 0;
+}
+
+.about h2 {
+    color: skyblue;
+    font-size: 50px;
+    font-weight: bold;
+    white-space: nowrap;
+    /* width: 27ch; */
+    margin: center;
 }
 
 

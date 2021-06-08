@@ -17,6 +17,11 @@ html {
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none;
+    color:cornflowerblue;
+}
+
 img {
     width: 100%;
     max-width: 100%;
@@ -200,13 +205,14 @@ ul {
     width: 100%;
     min-height: 100vh;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about .container {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .details {
@@ -223,6 +229,56 @@ ul {
     white-space: nowrap;
     /* width: 27ch; */
     margin: center;
+}
+
+
+/* Projects */
+
+.projects {
+    padding: 3rem 0;
+    min-height: 100vh;
+    /* min-width: 70rem; */
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    /* width: 100%; */
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    text-align: left;
+  }
+
+  .image {
+    height: 200px;
+    width: 200px;
+    /* object-fit: cover; */
+  }
+
+  .projects img {
+    border: 2px solid slategray;
+    box-shadow: 5px 5px slategray;
+    border-radius: 10%;
+  }
+
+.projects h3{
+    color: skyblue;
+    font-weight: bold;
+}
+
+.projects h2{
+    color: skyblue;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.projects p{
+    color: silver;
 }
 
 

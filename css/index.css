@@ -12,9 +12,10 @@ html {
     scroll-behavior: smooth;
     color: #e7e7e7;
     background: url('../images/LandingPage.jpg') no-repeat;
+    background-color: black;
     height: 100%;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 a {
@@ -238,7 +239,6 @@ ul {
 }
 
 svg {
-    fill: aquamarine;
     width: 100px;
     height: 100px;
 }
@@ -391,6 +391,10 @@ svg {
     .nav-list.active {
         right: 30px;
     }
+    svg {
+        width: 80px;
+        height: 80px;
+    }
     .contact-details {
         flex-direction: column;
     }
@@ -419,6 +423,10 @@ svg {
     .fa-bars,
     .nav-list.active {
         right: 10px;
+    }
+    svg {
+        width: 60px;
+        height: 60px;
     }
     .contact-details {
         flex-direction: column;

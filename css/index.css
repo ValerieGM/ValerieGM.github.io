@@ -44,7 +44,8 @@ hr {
 
 .about h2,
 .projects h2,
-.contact h2 {
+.contact h2,
+.skills h2 {
     color: skyblue;
     font-size: 50px;
     font-weight: bold;
@@ -89,7 +90,7 @@ nav {
     font-size: 40px;
     color: skyblue;
     position: fixed;
-    right: 220px;
+    right: 250px;
     top: 0;
     padding: 3.2rem;
 }
@@ -206,6 +207,41 @@ ul {
     font-size: 3.5rem;
 }
 
+/* Skills */
+
+.skills {
+    padding: 3rem 0;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-icons {
+    min-height: 80vh;
+    flex-grow: 1;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-tray {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+svg {
+    fill: aquamarine;
+    width: 100px;
+    height: 100px;
+}
 
 /* About */
 
@@ -213,8 +249,8 @@ ul {
     width: 100%;
     min-height: 100vh;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about .container {
@@ -247,11 +283,18 @@ ul {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
-    text-align: left;
+}
+
+.project-tile {
+    border-radius: 10%;
+    border: 3px solid rgba(143, 140, 140, 0.8);
+    background-color: black;
+    align-items: center;
 }
 
 .image {
@@ -288,6 +331,7 @@ ul {
 .contact-details {
     min-height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -304,13 +348,6 @@ ul {
     color: rgba(255, 255, 255, 0.2);
     text-align: center;
     padding: 2rem 0;
-}
-
-.footer-nav a {
-    color: silver;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 0.5rem;
 }
 
 .footer p {
@@ -332,9 +369,6 @@ ul {
     .contact-details {
         flex-direction: column;
     }
-    .footer-nav a {
-        font-size: 15px;
-    }
     .footer p {
         font-size: 10px;
     }
@@ -349,18 +383,16 @@ ul {
     }
     .about h2,
     .projects h2,
-    .contact h2 {
+    .contact h2
+    .skills h2 {
         font-size: 30px;
     }
     .fa-bars,
     .nav-list.active {
-        right: 100px;
+        right: 30px;
     }
     .contact-details {
         flex-direction: column;
-    }
-    .footer-nav a {
-        font-size: 15px;
     }
     .footer p {
         font-size: 10px;
@@ -380,7 +412,8 @@ ul {
     }
     .about h2,
     .projects h2,
-    .contact h2 {
+    .contact h2,
+    .skills h2 {
         font-size: 30px;
     }
     .fa-bars,
@@ -389,9 +422,6 @@ ul {
     }
     .contact-details {
         flex-direction: column;
-    }
-    .footer-nav a {
-        font-size: 15px;
     }
     .footer p {
         font-size: 10px;

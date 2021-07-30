@@ -14,7 +14,7 @@ html {
     background: url('../images/LandingPage.jpg') no-repeat;
     background-color: black;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 
 a {
